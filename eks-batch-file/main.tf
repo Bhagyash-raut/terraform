@@ -117,7 +117,7 @@ resource "aws_eks_node_group" "cbz_nodegroup" {
 variable.tf file
 variable "project" {
   type    = string
-  default = "cbz"
+  default = "lion"
 }
 
 variable "desired_nodes" {
