@@ -114,20 +114,25 @@ resource "aws_eks_node_group" "cbz_nodegroup" {
   ]
 }
 
+
 #variable.tf file
-#variable "project" {
-#  type    = string
-#  default = "lion"
-#}
+variable "project" {
+  type    = string
+  default = "lion"
+}
 
-#variable "desired_nodes" {
-#  type    = number
-#  default = 2
-#}
+variable "desired_nodes" {
+  type    = number
+  default = 2
+}
 
-#variable "min_nodes" {
-#  type    = number
-#
+variable "min_nodes" {
+  type    = 2
+}
+
+variable "node_instance_type" {
+    default = "c7i-flex.large"
+}
 
 project            = "cbz"
 desired_nodes      = 2
