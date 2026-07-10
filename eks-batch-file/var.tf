@@ -11,5 +11,5 @@ variable min_nodes {
     default = 2
 }
 variable node_instance_type {
-    default = "instance_type"
+    default = "c7i-flex.large"
 }
